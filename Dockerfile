@@ -7,5 +7,6 @@ ENV PROXY_READ_TIMEOUT 60s
 
 ADD nginx.conf.tmpl nginx.conf.tmpl
 ADD start.sh start.sh
+RUN chmod +x /start.sh
 
 ENTRYPOINT [ "/start.sh" ]
